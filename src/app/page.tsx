@@ -82,8 +82,8 @@ export default function Home() {
             <Image 
               src="/buba-logo.svg" 
               alt="Buba Classic Logo" 
-              className="h-8 sm:h-10 w-auto" 
-              width={120} 
+              className="h-8 w-auto" 
+              width={90} 
               height={40} 
               priority
             />
@@ -94,7 +94,7 @@ export default function Home() {
             <ul className="flex gap-[32px]">
               {headerItems.map(item => (
                 <li key={item.label}>
-                  <Link href={item.href} className="text-[15px] text-[#FCFCFC] hover:text-[#F2D953] transition-colors">
+                  <Link href={item.href} className="text-[15px] text-[#] hover:text-[#F2D953] transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -140,16 +140,15 @@ export default function Home() {
         {/* Hero Content */}
         <div className="flex items-center justify-center relative z-30 min-h-[60vh] lg:h-[70vh] px-4 sm:px-6 lg:px-0">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-ibarra text-[#FCFCFC] leading-tight">
-              Welcome to <br className="sm:hidden" />
-              <span className="block sm:inline">Buba Classic</span>
+            <h1 className="text-4xl text-center sm:text-5xl md:text-6xl lg:text-7xl font-ibarra max-w-lg text-[#FCFCFC]">
+              Welcome to Buba Classic
             </h1>
           </div>
         </div>
 
         {/* Bottom Content */}
         <div className="absolute bottom-4 sm:bottom-6 lg:bottom-0 left-4 right-4 sm:left-6 sm:right-6 lg:left-[40px] lg:right-[40px] z-30">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-0">
+          <div className="flex flex-col mb-10 lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-0">
             {/* Description */}
             <div className="order-2 lg:order-1 max-w-lg">
               <p className="text-sm sm:text-base text-[#BFBFBF] leading-relaxed">
